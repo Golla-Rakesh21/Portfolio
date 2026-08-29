@@ -189,3 +189,300 @@ body {
 .animate-mesh {
   animation: float-mesh 18s ease-in-out infinite;
 }
+
+/* ============================================================
+   PREMIUM GRID-BASED BACKGROUND — Vercel / Linear Inspired
+   ============================================================ */
+
+/* --- Design Tokens (Light) --- */
+:root {
+  --grid-line-color: rgba(148, 163, 184, 0.08);
+  --grid-sub-color: rgba(148, 163, 184, 0.03);
+  --grid-dot-color: rgba(99, 102, 241, 0.35);
+  --grid-center-from: rgba(59, 130, 246, 0.06);
+  --grid-center-to: transparent;
+  --glow-blue: rgba(59, 130, 246, 0.10);
+  --glow-indigo: rgba(99, 102, 241, 0.08);
+  --glow-violet: rgba(139, 92, 246, 0.07);
+  --floating-blue: rgba(59, 130, 246, 0.04);
+  --floating-indigo: rgba(99, 102, 241, 0.03);
+  --floating-violet: rgba(139, 92, 246, 0.025);
+  --vignette-color: rgba(255, 255, 255, 0.0);
+  --vignette-edge: rgba(241, 245, 249, 0.7);
+  --light-bar-from: rgba(59, 130, 246, 0.06);
+  --light-bar-via: rgba(99, 102, 241, 0.04);
+  --light-bar-to: transparent;
+  --glass-ambient-bg: rgba(255, 255, 255, 0.015);
+  --glass-ambient-border: rgba(226, 232, 240, 0.06);
+}
+
+/* --- Design Tokens (Dark) --- */
+.dark {
+  --grid-line-color: rgba(148, 163, 184, 0.045);
+  --grid-sub-color: rgba(148, 163, 184, 0.015);
+  --grid-dot-color: rgba(99, 102, 241, 0.55);
+  --grid-center-from: rgba(59, 130, 246, 0.08);
+  --grid-center-to: transparent;
+  --glow-blue: rgba(59, 130, 246, 0.12);
+  --glow-indigo: rgba(99, 102, 241, 0.10);
+  --glow-violet: rgba(139, 92, 246, 0.08);
+  --floating-blue: rgba(59, 130, 246, 0.035);
+  --floating-indigo: rgba(99, 102, 241, 0.03);
+  --floating-violet: rgba(139, 92, 246, 0.025);
+  --vignette-color: rgba(9, 13, 22, 0.0);
+  --vignette-edge: rgba(9, 13, 22, 0.85);
+  --light-bar-from: rgba(59, 130, 246, 0.08);
+  --light-bar-via: rgba(99, 102, 241, 0.05);
+  --light-bar-to: transparent;
+  --glass-ambient-bg: rgba(255, 255, 255, 0.008);
+  --glass-ambient-border: rgba(148, 163, 184, 0.04);
+}
+
+/* --- 1. Grid Highlight Center (Hero focal) --- */
+.grid-center-highlight {
+  background: radial-gradient(
+    ellipse 70% 50% at 50% 25%,
+    var(--grid-center-from) 0%,
+    var(--grid-center-to) 100%
+  );
+}
+
+/* --- 3. Gradient Glow Layers --- */
+.gradient-glow-primary {
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    var(--glow-blue) 0%,
+    var(--glow-indigo) 35%,
+    transparent 70%
+  );
+  filter: blur(90px);
+  animation: glow-drift-primary 25s ease-in-out infinite;
+}
+
+.gradient-glow-secondary {
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    var(--glow-indigo) 0%,
+    transparent 65%
+  );
+  filter: blur(80px);
+  animation: glow-drift-secondary 30s ease-in-out infinite;
+}
+
+.gradient-glow-violet {
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    var(--glow-violet) 0%,
+    transparent 60%
+  );
+  filter: blur(70px);
+  animation: glow-drift-violet 22s ease-in-out infinite;
+}
+
+/* --- 4. Glowing Intersection Dots --- */
+.grid-dot {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--grid-dot-color);
+  box-shadow: 0 0 6px 1px var(--grid-dot-color);
+  animation: dot-pulse 4s ease-in-out infinite;
+  will-change: opacity;
+}
+
+/* --- 5. Floating Gradient Blobs --- */
+.floating-gradient-1 {
+  top: -8%;
+  left: -10%;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--floating-blue) 0%, transparent 70%);
+  filter: blur(60px);
+  animation: float-gradient-1 28s ease-in-out infinite;
+}
+
+.floating-gradient-2 {
+  top: 40%;
+  right: -12%;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--floating-indigo) 0%, transparent 70%);
+  filter: blur(55px);
+  animation: float-gradient-2 24s ease-in-out infinite;
+}
+
+.floating-gradient-3 {
+  bottom: 5%;
+  left: 25%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--floating-violet) 0%, transparent 70%);
+  filter: blur(50px);
+  animation: float-gradient-3 30s ease-in-out infinite;
+}
+
+/* --- 6. Edge Vignette --- */
+.edge-vignette {
+  background: radial-gradient(
+    ellipse 80% 80% at 50% 50%,
+    var(--vignette-color) 40%,
+    var(--vignette-edge) 100%
+  );
+}
+
+/* --- 7. Top Ambient Light Bar --- */
+.top-light-bar {
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--light-bar-from) 20%,
+    var(--light-bar-via) 50%,
+    var(--light-bar-from) 80%,
+    transparent 100%
+  );
+  box-shadow: 0 0 40px 15px var(--light-bar-via);
+  opacity: 0.8;
+}
+
+/* --- 8. Glassmorphism Ambient Panels --- */
+.glass-ambient {
+  border-radius: 50%;
+  background: var(--glass-ambient-bg);
+  border: 1px solid var(--glass-ambient-border);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+.glass-ambient-1 {
+  top: 15%;
+  right: -5%;
+  width: 350px;
+  height: 350px;
+  animation: float-gradient-2 26s ease-in-out infinite reverse;
+}
+
+.glass-ambient-2 {
+  bottom: 20%;
+  left: -8%;
+  width: 280px;
+  height: 280px;
+  animation: float-gradient-1 32s ease-in-out infinite reverse;
+}
+
+
+/* ============================================================
+   KEYFRAMES — Slow, subtle, premium motion
+   ============================================================ */
+
+/* Dot pulse — subtle blink */
+@keyframes dot-pulse {
+  0%, 100% {
+    opacity: var(--dot-base-opacity, 0.3);
+    transform: scale(1);
+  }
+  50% {
+    opacity: calc(var(--dot-base-opacity, 0.3) * 0.4);
+    transform: scale(0.7);
+  }
+}
+
+/* Glow drifts — hero area */
+@keyframes glow-drift-primary {
+  0% {
+    transform: translateX(-50%) translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translateX(-50%) translate(15px, -20px) scale(1.04);
+  }
+  66% {
+    transform: translateX(-50%) translate(-10px, 12px) scale(0.97);
+  }
+  100% {
+    transform: translateX(-50%) translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes glow-drift-secondary {
+  0% {
+    transform: translateX(-50%) translate(0px, 0px) scale(1);
+  }
+  40% {
+    transform: translateX(-50%) translate(-20px, -15px) scale(1.06);
+  }
+  70% {
+    transform: translateX(-50%) translate(12px, 8px) scale(0.95);
+  }
+  100% {
+    transform: translateX(-50%) translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes glow-drift-violet {
+  0% {
+    transform: translateX(-50%) translate(0px, 0px) scale(1);
+  }
+  35% {
+    transform: translateX(-50%) translate(18px, -12px) scale(1.03);
+  }
+  65% {
+    transform: translateX(-50%) translate(-8px, 15px) scale(0.98);
+  }
+  100% {
+    transform: translateX(-50%) translate(0px, 0px) scale(1);
+  }
+}
+
+/* Floating gradient blobs */
+@keyframes float-gradient-1 {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(25px, -35px) scale(1.05);
+  }
+  66% {
+    transform: translate(-15px, 18px) scale(0.96);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes float-gradient-2 {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  40% {
+    transform: translate(-22px, -18px) scale(1.07);
+  }
+  75% {
+    transform: translate(14px, 12px) scale(0.94);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes float-gradient-3 {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  30% {
+    transform: translate(20px, -14px) scale(1.04);
+  }
+  60% {
+    transform: translate(-12px, 20px) scale(0.97);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}

@@ -12,6 +12,7 @@ import { JourneySection } from './components/JourneySection';
 import { GithubShowcaseSection } from './components/GithubShowcaseSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
+import { BackgroundEffects } from './components/BackgroundEffects';
 
 export function App() {
   // Initialize dark mode with priority: 1) localStorage 2) OS preference
@@ -81,6 +82,7 @@ export function App() {
       </AnimatePresence>
 
       <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300 font-sans selection:bg-blue-500 selection:text-white">
+        <BackgroundEffects />
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} scrollProgress={scrollProgress} />
         
         <main>
