@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { User, CheckCircle2, GraduationCap, Sparkles } from 'lucide-react';
+import { User, CheckCircle2, GraduationCap, Flame } from 'lucide-react';
 import { ABOUT_HIGHLIGHTS } from '../data/portfolioData';
 
 export const AboutSection = () => {
@@ -87,7 +87,7 @@ export const AboutSection = () => {
                 className="glass-panel p-5 rounded-2xl border border-slate-200/70 dark:border-slate-800 flex flex-col justify-between group hover:border-blue-500/50 transition-all shadow-sm"
               >
                 <div className="w-8 h-8 rounded-xl bg-slate-100 dark:bg-slate-800 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                  <Sparkles className="w-4 h-4" />
+                  <Flame className="w-4 h-4" />
                 </div>
                 <div>
                   <h4 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">

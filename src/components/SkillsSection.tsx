@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Cpu, Terminal, Code2, Database, Wrench, Sparkles, Layers } from 'lucide-react';
+import { Cpu, Terminal, Code2, Database, Wrench, BrainCircuit, Layers } from 'lucide-react';
 import { SKILL_CATEGORIES } from '../data/portfolioData';
 
 export const SkillsSection = () => {
@@ -9,7 +9,7 @@ export const SkillsSection = () => {
       case 1: return <Terminal className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />;
       case 2: return <Layers className="w-5 h-5 text-sky-600 dark:text-sky-400" />;
       case 3: return <Database className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />;
-      case 4: return <Sparkles className="w-5 h-5 text-purple-600 dark:text-purple-400" />;
+      case 4: return <BrainCircuit className="w-5 h-5 text-purple-600 dark:text-purple-400" />;
       default: return <Wrench className="w-5 h-5 text-amber-600 dark:text-amber-400" />;
     }
   };

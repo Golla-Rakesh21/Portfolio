@@ -81,7 +81,7 @@ export function App() {
         )}
       </AnimatePresence>
 
-      <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300 font-sans selection:bg-blue-500 selection:text-white">
+      <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans selection:bg-blue-500 selection:text-white">
         <BackgroundEffects />
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} scrollProgress={scrollProgress} />
         
