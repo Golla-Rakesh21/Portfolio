@@ -18,7 +18,7 @@ I enjoy solving real-world problems through clean, maintainable code and continu
   cgpa: '8.84',
   gradYear: '2026',
   resumeUrl: 'https://drive.google.com/uc?export=download&id=1iDfrD0Zjl59ovJx0RVaSdKATQKw-gblK',
-  resumeViewUrl: 'https://drive.google.com/file/d/1iDfrD0Zjl59ovJx0RVaSdKATQKw-gblK/view?usp=drive_link',
+  resumeViewUrl: 'https://drive.google.com/file/d/1HmlFW1drFWzzrlEm8iloH09zTa780usT/view?usp=drive_link',
 };
 
 export const ABOUT_HIGHLIGHTS = [
