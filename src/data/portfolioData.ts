@@ -280,10 +280,19 @@ export const LEARNING_JOURNEY: TimelineItem[] = [
 
 export const FEATURED_GITHUB_REPOS: GithubRepo[] = [
   {
+  name: 'StudentManagement',
+  description: 'Student Management System backend built with Spring Boot, RESTful APIs, Spring Data JPA, Hibernate, and MySQL for managing student records.',
+  stars: 0,
+  forks: 0,
+  language: 'Java',
+  updatedAt: '2026-10-18',
+  url: 'https://github.com/Golla-Rakesh21/StudentManagement'
+},
+  {
     name: 'GENAI_RAG',
     description: 'Retrieval Augmented Generation pipeline with LangChain and vector store search.',
-    stars: 18,
-    forks: 6,
+    stars: 0,
+    forks: 0,
     language: 'Python',
     updatedAt: '2026-01-20',
     url: 'https://github.com/Golla-Rakesh21/GENAI_RAG'
@@ -291,8 +300,8 @@ export const FEATURED_GITHUB_REPOS: GithubRepo[] = [
   {
     name: 'Waste-Classification',
     description: 'Deep Learning Hybrid CNN model for automated multi-class waste classification.',
-    stars: 24,
-    forks: 8,
+    stars: 0,
+    forks: 0,
     language: 'Python',
     updatedAt: '2025-11-10',
     url: 'https://github.com/Golla-Rakesh21/Waste-Classification'
@@ -300,8 +309,8 @@ export const FEATURED_GITHUB_REPOS: GithubRepo[] = [
   {
     name: 'Extension-hide-negative-comments-Facebook',
     description: 'Real-time NLP toxicity filter extension for Facebook comments.',
-    stars: 29,
-    forks: 11,
+    stars: 0,
+    forks: 0,
     language: 'JavaScript',
     updatedAt: '2025-09-04',
     url: 'https://github.com/Golla-Rakesh21/Extension-hide-negative-comments-Facebook'
@@ -309,8 +318,8 @@ export const FEATURED_GITHUB_REPOS: GithubRepo[] = [
   {
     name: 'Java-Programs',
     description: 'Comprehensive repository of Java DSA solutions, Swing apps, OOP concepts & JDBC demos.',
-    stars: 35,
-    forks: 14,
+    stars: 0,
+    forks: 0,
     language: 'Java',
     updatedAt: '2026-02-01',
     url: 'https://github.com/Golla-Rakesh21/Java-Programs'
