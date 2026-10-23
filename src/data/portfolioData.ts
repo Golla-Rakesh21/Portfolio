@@ -67,8 +67,34 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 ];
 
 export const PROJECTS: Project[] = [
+  
+{
+  id: 'proj-1',
+  title: 'Student Management System',
+  subtitle: 'RESTful Backend Application with Spring Boot',
+  description: 'Developed a Student Management System backend using Java and Spring Boot to manage student records efficiently. Implemented RESTful APIs with CRUD operations, database integration using Spring Data JPA and Hibernate, and MySQL for persistent data storage.',
+  features: [
+    'RESTful APIs for Student CRUD Operations',
+    'Student Search, Filtering, and Pagination',
+    'MySQL Database Integration with Spring Data JPA',
+    'Layered Architecture using Controller, Service, and Repository',
+    'Exception Handling and Data Management'
+  ],
+  tech: [
+    'Java',
+    'Spring Boot',
+    'Spring Web',
+    'Spring Data JPA',
+    'Hibernate',
+    'MySQL',
+    'Maven',
+    'Docker'
+  ],
+  category: 'Java/Backend',
+  githubUrl: 'https://github.com/Golla-Rakesh21/StudentManagement'
+},
   {
-    id: 'proj-1',
+    id: 'proj-2',
     title: 'Facebook Toxic Comment Filtering Extension',
     subtitle: 'Real-Time Comment Filtering Extension for Facebook',
     description: 'Chrome extension that automatically detects and hides toxic Facebook comments using NLP techniques in real-time, boosting user mental wellbeing and creating a safer social environment.',
@@ -84,7 +110,7 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/Golla-Rakesh21/Extension-hide-negative-comments-Facebook'
   },
   {
-    id: 'proj-2',
+    id: 'proj-3',
     title: 'Hybrid CNN Waste Classification',
     subtitle: 'Research-Based AI Model for Waste Classification with Environmental Awareness',
     description: 'Deep learning solution combining customized CNN architectures to classify multi-category waste automatically, helping municipal recycling plants and smart bins reduce landfill contamination.',
@@ -100,7 +126,7 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/Golla-Rakesh21/Waste-Classification'
   },
   {
-    id: 'proj-3',
+    id: 'proj-4',
     title: 'Grammar & Spell Checker',
     subtitle: 'AI-Powered Intelligent Proofreading Application',
     description: 'Interactive web-based proofreading assistant that detects complex syntactic errors, typos, and style issues using PySpellChecker & LanguageTool-Python with instant suggestions.',
@@ -114,7 +140,7 @@ export const PROJECTS: Project[] = [
     category: 'AI/ML'
   },
   {
-    id: 'proj-4',
+    id: 'proj-5',
     title: 'Java Notepad Application',
     subtitle: 'Desktop Text Editing Suite Built with Java Swing',
     description: 'Feature-complete desktop text editing software built using native Java Swing frameworks, allowing users to create, open, edit, save, and print .txt files with keyboard shortcuts.',
@@ -129,7 +155,7 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/Golla-Rakesh21/Java-Programs'
   },
   {
-    id: 'proj-5',
+    id: 'proj-6',
     title: 'GENAI RAG Assistant',
     subtitle: 'Retrieval-Augmented Generation Application with LangChain',
     description: 'Enterprise knowledge-base assistant enabling users to upload custom documents and query them seamlessly using vector store retrieval and Large Language Model contextual reasoning.',
