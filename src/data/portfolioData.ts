@@ -46,7 +46,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   },
   {
     title: 'Core Java & Backend',
-    skills: ['OOP', 'Collections Framework', 'Exception Handling', 'Multithreading', 'JDBC', 'Spring Framework', 'Spring Boot', 'Spring MVC', 'Hibernate ORM', 'Spring Data JPA', 'RESTful APIs'],
+    skills: ['OOP', 'Collections Framework', 'Exception Handling', 'Multithreading', 'JDBC', 'Spring Framework', 'Spring Boot', 'Spring MVC', 'Hibernate ORM', 'Spring Data JPA', 'RESTful APIs','spring security'],
   },
   {
     title: 'Frontend Development',
@@ -70,6 +70,45 @@ export const PROJECTS: Project[] = [
   
 {
   id: 'proj-1',
+  title: 'URL Shortener API',
+  subtitle: 'Secure RESTful Backend Application with Spring Boot',
+  description: 'Developed a secure URL Shortener backend using Java and Spring Boot to convert long URLs into short, shareable links. Implemented RESTful APIs for URL creation, retrieval, updating, deletion, and redirection, with JWT-based authentication and authorization. Integrated Spring Security, BCrypt password hashing, Spring Data JPA, and Hibernate to ensure secure user-specific URL management and reliable database operations.',
+  features: [
+    'RESTful APIs for Short URL Creation, Retrieval, Update, and Deletion',
+    'JWT-Based Authentication and Authorization',
+    'User Registration and Login with BCrypt Password Hashing',
+    'Unique Short Code Generation and URL Redirection',
+    'User-Specific URL Management with Ownership Validation',
+    'Enable and Disable Short URLs',
+    'URL Settings Management Without Changing Short Codes',
+    'Global Exception Handling and Request Validation',
+    'API Documentation and Testing using Swagger / OpenAPI',
+    'Docker Containerization and Render Deployment'
+  ],
+  tech: [
+    'Java 21',
+    'Spring Boot',
+    'Spring Web MVC',
+    'Spring Security',
+    'Spring Data JPA',
+    'Hibernate',
+    'MySQL',
+    'H2 Database',
+    'JWT',
+    'BCrypt',
+    'Swagger / OpenAPI',
+    'Maven',
+    'Docker',
+    'Render'
+  ],
+  category: 'Java/Backend',
+  githubUrl: 'https://github.com/Golla-Rakesh21/Url-Shortner-Api'
+},
+
+  
+{
+  
+  id: 'proj-2',
   title: 'Student Management System',
   subtitle: 'RESTful Backend Application with Spring Boot',
   description: 'Developed a Student Management System backend using Java and Spring Boot to manage student records efficiently. Implemented RESTful APIs with CRUD operations, database integration using Spring Data JPA and Hibernate, and MySQL for persistent data storage.',
@@ -94,7 +133,7 @@ export const PROJECTS: Project[] = [
   githubUrl: 'https://github.com/Golla-Rakesh21/StudentManagement'
 },
   {
-    id: 'proj-2',
+    id: 'proj-3',
     title: 'Facebook Toxic Comment Filtering Extension',
     subtitle: 'Real-Time Comment Filtering Extension for Facebook',
     description: 'Chrome extension that automatically detects and hides toxic Facebook comments using NLP techniques in real-time, boosting user mental wellbeing and creating a safer social environment.',
@@ -110,7 +149,7 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/Golla-Rakesh21/Extension-hide-negative-comments-Facebook'
   },
   {
-    id: 'proj-3',
+    id: 'proj-4',
     title: 'Hybrid CNN Waste Classification',
     subtitle: 'Research-Based AI Model for Waste Classification with Environmental Awareness',
     description: 'Deep learning solution combining customized CNN architectures to classify multi-category waste automatically, helping municipal recycling plants and smart bins reduce landfill contamination.',
@@ -126,7 +165,7 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/Golla-Rakesh21/Waste-Classification'
   },
   {
-    id: 'proj-4',
+    id: 'proj-5',
     title: 'Grammar & Spell Checker',
     subtitle: 'AI-Powered Intelligent Proofreading Application',
     description: 'Interactive web-based proofreading assistant that detects complex syntactic errors, typos, and style issues using PySpellChecker & LanguageTool-Python with instant suggestions.',
@@ -140,7 +179,7 @@ export const PROJECTS: Project[] = [
     category: 'AI/ML'
   },
   {
-    id: 'proj-5',
+    id: 'proj-6',
     title: 'Java Notepad Application',
     subtitle: 'Desktop Text Editing Suite Built with Java Swing',
     description: 'Feature-complete desktop text editing software built using native Java Swing frameworks, allowing users to create, open, edit, save, and print .txt files with keyboard shortcuts.',
@@ -155,7 +194,7 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/Golla-Rakesh21/Java-Programs'
   },
   {
-    id: 'proj-6',
+    id: 'proj-7',
     title: 'GENAI RAG Assistant',
     subtitle: 'Retrieval-Augmented Generation Application with LangChain',
     description: 'Enterprise knowledge-base assistant enabling users to upload custom documents and query them seamlessly using vector store retrieval and Large Language Model contextual reasoning.',
@@ -279,6 +318,15 @@ export const LEARNING_JOURNEY: TimelineItem[] = [
 ];
 
 export const FEATURED_GITHUB_REPOS: GithubRepo[] = [
+  {
+  name: 'Url-Shortner-Api',
+  description: 'Secure URL Shortener backend built with Java, Spring Boot, RESTful APIs, Spring Security, JWT authentication, Spring Data JPA, and Hibernate for URL management, user authentication, and short URL redirection.',
+  stars: 0,
+  forks: 0,
+  language: 'Java',
+  updatedAt: '2026-11-07',
+  url: 'https://github.com/Golla-Rakesh21/Url-Shortner-Api'
+},
   {
   name: 'StudentManagement',
   description: 'Student Management System backend built with Spring Boot, RESTful APIs, Spring Data JPA, Hibernate, and MySQL for managing student records.',
