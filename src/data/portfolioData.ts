@@ -17,8 +17,8 @@ I enjoy solving real-world problems through clean, maintainable code and continu
   leetcode: 'https://leetcode.com/u/Golla-Rakesh21/',
   cgpa: '8.84',
   gradYear: '2026',
-  resumeUrl: 'https://drive.google.com/uc?export=download&id=1HmlFW1drFWzzrlEm8iloH09zTa780usT',
-  resumeViewUrl: 'https://drive.google.com/file/d/1HmlFW1drFWzzrlEm8iloH09zTa780usT/view?usp=drive_link',
+ resumeUrl: 'https://drive.google.com/uc?export=download&id=1jGIWukVJ59xu81G9NJiYzShz8jhFpD6N',
+resumeViewUrl: 'https://drive.google.com/file/d/1jGIWukVJ59xu81G9NJiYzShz8jhFpD6N/view?usp=sharing',
 };
 
 export const ABOUT_HIGHLIGHTS = [
