@@ -58,7 +58,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   },
   {
     title: 'AI Development',
-    skills: ['Natural Language Processing (NLP)', 'Retrieval-Augmented Generation (RAG)', 'LangChain', 'Prompt Engineering', 'Convolutional Neural Networks (CNN)', 'Streamlit'],
+    skills: ['Tool Calling','LangChain4j','spring ai','Natural Language Processing (NLP)', 'Retrieval-Augmented Generation (RAG)', 'Prompt Engineering', 'Convolutional Neural Networks (CNN)', 'Streamlit'],
   },
   {
     title: 'Tools & Ecosystem',
@@ -314,6 +314,10 @@ export const LEARNING_JOURNEY: TimelineItem[] = [
     year: '2026',
     title: 'Graduated & Seeking SWE Opportunities',
     description: 'Graduating with 8.84 CGPA. Actively seeking Software Engineering, Java Backend, and Full-Stack positions.'
+  },{
+    year : '2026',
+    title: 'Learning Agentic AI with Java - telusko.com',
+    description: 'Actively grasping knowledge on the  Agentic systems and implementations.'
   }
 ];
 
